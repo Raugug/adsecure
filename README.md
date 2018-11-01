@@ -14,7 +14,7 @@ I tested manually the functions but I didn't use unit tests because my time is r
 
 - Find a flat exercise files:
         bestFlats.js - apiService.js - bestflats.json
-        I used node.JS:
-             - node bestFlats.js to run it 
+- I used node.JS:
+           node bestFlats.js to run it 
 
-        The "algorithm" to choose the best flats is just a dumb sort function. I am aware this is not really useful. I can improve it if necessary.
+The "algorithm" to choose the best flats is just a dumb sort function. I am aware this is not really useful. I can improve it if necessary.
