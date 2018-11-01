@@ -14,4 +14,4 @@ const checkBraces = (input) => {
       }
     }
     return (opentags.length == 0);
-  }
+}

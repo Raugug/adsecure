@@ -22,4 +22,4 @@ const targetValue = (input, target) => {
         }
         return true;
     } 
-  }
+}

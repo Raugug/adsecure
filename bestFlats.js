@@ -1,4 +1,7 @@
 const apiService = require('./apiService');
+const jsonfile = require('jsonfile')
+ 
+const file = './bestflats.json'
 const  nestoria = new apiService();
 
 
@@ -21,6 +24,7 @@ const compareFlats = (a,b) => {
         }
     }
 }
+
 const bestflats = () =>{
     let bestFlats = [];
     for (let i=1; i<=20; i++){
@@ -30,11 +34,15 @@ const bestflats = () =>{
                 for (let i=0; i<10; i++){
                     bestFlats.push(sorted[i]);
                 }
-                
-                console.log(JSON.stringify(bestFlats));
+                jsonfile.writeFile(file, bestFlats)
+                    .then(res => {
+                        console.log('JSON CREATED')
+                    })
+                    .catch(err => console.error(err))
                 return
             }
         })
     }
 }
+
 bestflats();

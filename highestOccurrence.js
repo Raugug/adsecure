@@ -17,4 +17,4 @@ const highestOccurrence = (array) => {
       result.push(elem)
     })
     return result
-  }
+}
